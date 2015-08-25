@@ -1,5 +1,22 @@
 *.class
 
+#idea files
+.idea/*
+*.iml
+*.ipr
+*.iws
+
+#gradle files
+gradle/*
+.gradle/*
+gradlew
+gradlew.bat
+settings.gradle
+
+out/*
+results/*
+build/*
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
