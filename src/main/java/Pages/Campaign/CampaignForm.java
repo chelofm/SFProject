@@ -104,15 +104,15 @@ public class CampaignForm extends FormBase {
 
     public CampaignForm setEndDate(String endDate){
         wait.until(ExpectedConditions.visibilityOf(endDateTxt));
-        startDateTxt.clear();
-        startDateTxt.sendKeys(endDate);
+        endDateTxt.clear();
+        endDateTxt.sendKeys(endDate);
         return this;
     }
 
     public CampaignForm setExpectedRevenue(String expectedRevenue){
         wait.until(ExpectedConditions.visibilityOf(expectedRevenueTxt));
-        cpnNameTxt.clear();
-        cpnNameTxt.sendKeys(expectedRevenue);
+        expectedRevenueTxt.clear();
+        expectedRevenueTxt.sendKeys(expectedRevenue);
         return this;
     }
 
@@ -125,29 +125,29 @@ public class CampaignForm extends FormBase {
 
     public CampaignForm setActualCost(String actualCost){
         wait.until(ExpectedConditions.visibilityOf(actualCostTxt));
-        budgetedCostTxt.clear();
-        budgetedCostTxt.sendKeys(actualCost);
+        actualCostTxt.clear();
+        actualCostTxt.sendKeys(actualCost);
         return this;
     }
 
     public CampaignForm setExpectedResponse(String expectedResponse){
         wait.until(ExpectedConditions.visibilityOf(expectedResponseTxt));
-        budgetedCostTxt.clear();
-        budgetedCostTxt.sendKeys(expectedResponse);
+        expectedResponseTxt.clear();
+        expectedResponseTxt.sendKeys(expectedResponse);
         return this;
     }
 
     public CampaignForm setNumSet(String numSet){
         wait.until(ExpectedConditions.visibilityOf(numSentTxt));
-        budgetedCostTxt.clear();
-        budgetedCostTxt.sendKeys(numSet);
+        numSentTxt.clear();
+        numSentTxt.sendKeys(numSet);
         return this;
     }
 
     public CampaignForm setDescription(String description){
         wait.until(ExpectedConditions.visibilityOf(descriptionTxtArea));
-        budgetedCostTxt.clear();
-        budgetedCostTxt.sendKeys(description);
+        descriptionTxtArea.clear();
+        descriptionTxtArea.sendKeys(description);
         return this;
     }
 
