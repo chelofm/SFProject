@@ -1,5 +1,6 @@
 package Pages.Campaign;
 
+import Framework.Helper;
 import Framework.WebDriverManager;
 import Pages.BasePages.DetailsBase;
 import org.openqa.selenium.WebDriver;
@@ -94,7 +95,8 @@ public class CampaignDetails extends DetailsBase{
     }
 
     public String getExpectedRevenue(){
-        
+        wait.until(ExpectedConditions.visibilityOf(expectedRevenueContainer));
+        return Helper.addDolarCharToString(expectedRevenueContainer.getText());
     }
 
 }

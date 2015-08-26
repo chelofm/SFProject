@@ -21,8 +21,8 @@ public class CreateCampaign {
     private final String cpnName = "CampaignName01";
     private final String type = "Partners";
     private final String status = "Completed";
-    private final String startDate = "08/24/2015";
-    private final String endDate = "08/28/2015";
+    private final String startDate = "10/08/2015";
+    private final String endDate = "15/08/2015";
     private final String expectedRevenue = "100.25";
     private final String budgetedCost = "15000";
     private final String actualCost = "13000";
@@ -63,6 +63,7 @@ public class CreateCampaign {
         Assert.assertEquals(campaignDetails.getStatus(), status);
         Assert.assertEquals(campaignDetails.getStartDate(), startDate);
         Assert.assertEquals(campaignDetails.getEndDate(), endDate);
+        Assert.assertEquals(campaignDetails.getExpectedRevenue(), expectedRevenue);
     }
 
     @AfterClass
